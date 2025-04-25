@@ -1,62 +1,136 @@
 # Library Book Reservation System
-
 ![image](https://github.com/user-attachments/assets/88cf5c2d-12c9-4bbd-abc5-72aaed75975c)
 
-## Project Description
+A modern web-based library management system that allows users to search, view, and reserve books. Built with Java Servlets, JSP, and MySQL.
 
-The Library Book Reservation System is a comprehensive web-based application designed to streamline the management of library resources and enhance the user experience for both library administrators and students. This modern system leverages Java Servlets, JSP, and MySQL to provide a robust platform for book management and reservation.
+![Library Management System](https://img.shields.io/badge/Java-Servlet-orange)
+![Library Management System](https://img.shields.io/badge/JSP-2.3-blue)
+![Library Management System](https://img.shields.io/badge/MySQL-8.0-green)
+![Library Management System](https://img.shields.io/badge/TailwindCSS-3.0-38B2AC)
 
-## Core Functionality
+## Features
 
-### For Administrators
-Administrators have full control over the library's digital infrastructure. They can:
-- Add new books to the system
-- Manage existing book records
-- Oversee all reservations
-- Access a centralized dashboard with inventory and reservation status
-- View detailed book information and manage user reservations
+- **User Authentication**
+  - Login and logout functionality
+  - Role-based access control (Admin and Student)
 
-### For Students
-Students benefit from an intuitive interface that allows them to:
-- Search for books by title
-- View book availability in real-time
-- Reserve available books with a few clicks
-- Access a dashboard displaying current reservations and search functionality
+- **Book Management**
+  - View all available books
+  - Search books by title
+  - Add new books (Admin only)
+  - View book details and availability status
 
-## Technical Implementation
+- **Reservation System**
+  - Reserve available books
+  - View reservation history
+  - Manage reservations (Admin only)
 
-The application follows a structured MVC (Model-View-Controller) architecture:
+- **Modern UI**
+  - Responsive design using Tailwind CSS
+  - Intuitive user interface
+  - Beautiful gradients and animations
 
-- **Model Layer**: Contains data objects (Book, User, Reservation) representing core entities.
-- **DAO Layer**: Implements data access objects for database operations, separating business logic and data persistence.
-- **Controller Layer**: Manages user requests via servlets that process form submissions and direct users to views.
-- **View Layer**: Uses JSP pages styled with Tailwind CSS for a modern, responsive design.
+## Technology Stack
 
-## User Interface
+- **Backend**
+  - Java Servlets
+  - JSP (JavaServer Pages)
+  - JDBC for database connectivity
 
-The system features a visually appealing interface with:
-- A modern dashboard tailored to user roles
-- Comprehensive book listings with status indicators
-- Instant search functionality
-- Responsive design for seamless use across devices
-- Visual feedback for user actions (success/error messages)
+- **Frontend**
+  - HTML5
+  - Tailwind CSS
+  - Font Awesome icons
 
-## Database Structure
+- **Database**
+  - MySQL
 
-The system uses a MySQL database with tables for users, books, and reservations, ensuring data integrity and efficient querying of book availability and reservation status.
+## Project Structure
 
-## Security Features
+```
+LibraryBookReservationSystem/
+├── src/
+│   └── java/
+│       ├── controller/         # Servlet controllers
+│       │   ├── BookServlet.java
+│       │   ├── LoginServlet.java
+│       │   ├── LogoutServlet.java
+│       │   └── ReservationServlet.java
+│       ├── dao/                # Data Access Objects
+│       │   ├── BookDAO.java
+│       │   ├── ReservationDAO.java
+│       │   └── UserDAO.java
+│       └── model/              # Data models
+│           ├── Book.java
+│           ├── Reservation.java
+│           └── User.java
+├── web/                        # Web resources
+│   ├── WEB-INF/
+│   ├── addBook.jsp
+│   ├── bookList.jsp
+│   ├── dashboard.jsp
+│   ├── error.jsp
+│   ├── login.jsp
+│   ├── reserveForm.jsp
+│   ├── searchBook.jsp
+│   ├── success.jsp
+│   └── viewReservation.jsp
+└── build.xml                   # Ant build file
+```
 
-- Role-based access control to restrict features by user role
-- Session management for secure user authentication
+## Installation and Setup
 
-## Benefits
+1. **Prerequisites**
+   - Java JDK 8 or higher
+   - Apache Tomcat 9.0 or higher
+   - MySQL 8.0 or higher
+   - NetBeans IDE (recommended)
 
-The Library Book Reservation System improves library operations by:
-1. Reducing manual workload for staff
-2. Enabling student self-service
-3. Minimizing errors in book tracking and reservations
-4. Providing real-time book availability
-5. Enhancing the library experience with a user-friendly interface
+2. **Database Setup**
+   - Create a MySQL database named `librarydb`
+   - Import the provided SQL schema (if available)
 
-This system balances functionality and aesthetics, making it an ideal solution for educational institutions modernizing library management.
+3. **Application Setup**
+   - Clone the repository
+   - Open the project in NetBeans
+   - Update database connection details in the DAO classes if needed
+   - Build and deploy the application to Tomcat
+
+## Usage
+
+1. **Login**
+   - Access the application through your web browser
+   - Login with your credentials (Admin or Student)
+
+2. **Admin Features**
+   - Add new books to the library
+   - View and manage all reservations
+   - View all books in the system
+
+3. **Student Features**
+   - Search for books
+   - View book details
+   - Reserve available books
+   - View your reservation history
+
+## Screenshots
+
+(Screenshots will be added here)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+**IsuruZenith**
+
+## Acknowledgments
+
+- Tailwind CSS for the beautiful UI components
+- Font Awesome for the icons
+- MySQL for the database 
