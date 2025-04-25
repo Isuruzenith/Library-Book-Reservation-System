@@ -1,5 +1,4 @@
 # Library Book Reservation System
-![image](https://github.com/user-attachments/assets/88cf5c2d-12c9-4bbd-abc5-72aaed75975c)
 
 A modern web-based library management system that allows users to search, view, and reserve books. Built with Java Servlets, JSP, and MySQL.
 
@@ -114,8 +113,17 @@ LibraryBookReservationSystem/
    - View your reservation history
 
 ## Screenshots
+![Admin Dashboard](https://github.com/user-attachments/assets/88cf5c2d-12c9-4bbd-abc5-72aaed75975c)
+*Admin dashboard displaying inventory and reservation status.*
 
-(Screenshots will be added here)
+![Student Interface](https://github.com/user-attachments/assets/3908503e-f395-4212-9d3d-36f4f06f7bb3)
+*Student interface for browsing and reserving books.*
+
+![Book Listing](https://github.com/user-attachments/assets/c6e1b3aa-06b5-4dae-a7f5-fac1473a5c87)
+*Comprehensive book listing with availability indicators.*
+
+![Search Functionality](https://github.com/user-attachments/assets/7fc98d43-ee6f-4713-9201-5a70dcd94767)
+*Instant search feature for finding books by title.*
 
 ## Contributing
 
